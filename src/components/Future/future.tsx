@@ -49,7 +49,7 @@ function Future(props:any) {
         <Text
          sx={Theme.futureContainerText}
         >
-         {props.subText}  <a style={{textDecoration:"underline",cursor:"pointer"}}> {props.anchor} </a>
+         {props.subText}  <a href="www.google.com" style={{textDecoration:"underline",cursor:"pointer"}}> {props.anchor} </a>
         </Text>
 
   
