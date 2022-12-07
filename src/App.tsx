@@ -1,25 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { ChakraProvider ,extendTheme} from '@chakra-ui/react'
+import { StepsStyleConfig } from 'chakra-ui-steps';
+import CompleteProfile from './pages/completeProfile';
+
+
+
+const CustomSteps = {
+  ...StepsStyleConfig,
+  baseStyle: (props: { [x: string]: any; colorScheme: string; colorMode: "dark" | "light"; orientation: "horizontal" | "vertical" | undefined; theme: { [key: string]: any; }; }) => {
+    return {
+      ...StepsStyleConfig.baseStyle(props),
+      icon: {
+        ...StepsStyleConfig.baseStyle(props).icon,
+        // your custom styles here
+        // strokeWidth: '1px',
+        color:"white",
+        backgroundColor:"#38a169",
+      },
+      label:{
+
+        ...StepsStyleConfig.baseStyle(props).label,
+        // backgroundColor:"red",
+        background:"transparent",
+     
+      }
+    };
+  },
+};
+
+const theme = extendTheme({
+  components: {
+    Steps: CustomSteps,
+  },
+});
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ 
+    <ChakraProvider theme={theme}>
+      <CompleteProfile/>
+    
+    </ChakraProvider>
   );
 }
 
