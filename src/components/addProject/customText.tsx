@@ -15,8 +15,8 @@ function CustomText(props:any) {
           sx={{
             textAlign: "center",
             backgroundColor: "white",
-            fontFamily:"Inter",
-            fontStyle:"normal",
+            // fontFamily:"Inter",
+            // fontStyle:"normal",
             fontWeight:"600",
             fontSize:"20px",
             color:props.clr
@@ -29,8 +29,8 @@ function CustomText(props:any) {
           sx={{
             backgroundColor: "white",
             color:"#919DAD",
-            fontFamily:"inter",
-            fontStyle:"normal",
+            // fontFamily:"inter",
+            // fontStyle:"normal",
             fontWeight:"600",
             fontSize:"14px",
           

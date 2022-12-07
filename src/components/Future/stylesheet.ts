@@ -19,7 +19,7 @@ const Theme = {
         fontWeight: "600",
         fontSize: "20px",
         lineHeight: "21px",
-        fontFamily: "inter",
+        // fontFamily: "inter",
         backgroundColor: "white",
         ml:"10px"
     },
@@ -32,8 +32,8 @@ const Theme = {
         fontSize: "14px",
         lineHeight: "22.5px",
         backgroundColor: "white",
-        fontFamily: "inter",
-        fontStyle: "normal",
+        // fontFamily: "inter",
+        // fontStyle: "normal",
         color: "#919DAD",
     }
 

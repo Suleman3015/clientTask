@@ -16,7 +16,7 @@ function ProductBox(props:any) {
     <>
     <Flex
     onClick={()=> setActive(!active)}
-   border={active === true ?"3px solid blue":"0px"}
+   border={active === true ?"3px solid #3F8CFF":"0px"}
     boxShadow="base"
     rounded="md"
     bg="white"
@@ -70,8 +70,8 @@ function ProductBox(props:any) {
     <Box sx={{ padding: "8px" }}>
       <Text
         sx={{
-          fontFamily: "poppins",
-          fontStyle: "normal",
+          // fontFamily: "poppins",
+          // fontStyle: "normal",
           fontWeight: "500",
           fontSize: "17px",
         }}
@@ -82,10 +82,10 @@ function ProductBox(props:any) {
       <TiLocation/>
       <Text
         sx={{
-          fontFamily: "inter",
-          fontStyle: "normal",
+          // fontFamily: "inter",
+          // fontStyle: "normal",
           fontWeight: "700",
-          fontSize: "11px",
+          fontSize: "10px",
           color: "#606164",
           marginLeft:"2px",
           marginBottom:"2px"
@@ -101,8 +101,8 @@ function ProductBox(props:any) {
       <Divider sx={{ margin: "auto" }} width="100%" />
       <Text
         sx={{
-          fontFamily: "inter",
-          fontStyle: "normal",
+          // fontFamily: "inter",
+          // fontStyle: "normal",
           fontWeight: "700",
           fontSize: "12px",
           color: "#606164",
